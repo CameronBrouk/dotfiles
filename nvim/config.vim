@@ -32,10 +32,6 @@ set number " add line numbers
 " Change Color 
 highlight LineNr ctermfg=blue
 
-" Sign Column
-" ------------------------
-" highlight SignColumn guibg=dark | THIS DIDN"T WORK
-
 " Cursor 
 " ------------------------
 "  Terminal Mode
