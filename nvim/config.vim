@@ -13,10 +13,10 @@ let g:gruvbox_improved_warnings='1'
 
 " Tabs
 " ------------------------
-set tabstop=2 " indent using two spaces
-set shiftwidth=2 " when shifting, indent with two spaces
-set softtabstop=2
-set expandtab " convert tab to space
+" set tabstop=2 " indent using two spaces
+" set shiftwidth=2 " when shifting, indent with two spaces
+" set softtabstop=2
+" set expandtab " convert tab to space
 
 " Search
 " ------------------------
