@@ -1,0 +1,36 @@
+[user]
+	name = Cameron Brouk
+	email = cameronbrouk@gmail.com
+[core]
+	editor = vim
+[alias]
+	# status
+	s = status .
+	ss = status -s .
+
+	# commit everything, including unstaged changes
+	cm = commit -am
+
+	# checkout out
+	co = checkout
+
+	# branch
+	b = branch
+
+	# cherry pick
+	cp = cherry-pick
+
+	# diff
+	d = diff
+
+	# Log Commits
+        lg = log --pretty=format:\"%C(yellow)%h%Creset %C(037)%an:%Creset %C(white)%s%Creset%C(auto)%d%Creset %C(green)%ar%Creset\" -10
+        lghours = log --pretty=format:\"%C(037)%an:%Creset%C(green)%ar%Creset\"
+
+	# Log Commits With Change Amount
+        lgstat = "!cd ${GIT_PREFIX:-.} && git lg --stat --no-merges -5"
+        lgsstat = "!cd ${GIT_PREFIX:-.} && git lg --shortstat --no-merges -5"
+
+        # Can't remember what this does
+        ld = log -p
+        ldf = ld --follow
