@@ -14,9 +14,14 @@ call minpac#add('junegunn/fzf.vim') " Fuzzy Search
 call minpac#add('bling/vim-bufferline') " Show buffers underneath the status line
 call minpac#add('neoclide/coc.nvim') " Bring VScode like plugin system to Vim(Intellisence/Linting/etc)
 call minpac#add('jiangmiao/auto-pairs') " Automatically create extra bracket/quote/paren paris
-call minpac#add('morhetz/gruvbox') " Theme
 call minpac#add('easymotion/vim-easymotion') " Easy Motion 
-call minpac#add('peitalin/vim-jsx-typescript') " TSX integration
+call minpac#add('morhetz/gruvbox') " Theme
+
+" SYNTAX
+call minpac#add('maxmellon/vim-jsx-pretty') " JS and TSX Syntax
+call minpac#add('pangloss/vim-javascript') " TypeScript Syntax
+call minpac#add('leafgarland/typescript-vim') " TypeScript Syntax
+call minpac#add('neovimhaskell/haskell-vim') " Haskell Syntax
 
 
 " Show Runtime Path
