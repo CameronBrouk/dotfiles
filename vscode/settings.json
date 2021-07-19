@@ -1,0 +1,236 @@
+{
+  // 	// Vim
+  "vim.camelCaseMotion.enable": true,
+  "vim.easymotion": true,
+  "vim.gdefault": true,
+  "vim.foldfix": true,
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.duration": 400,
+  "vim.hlsearch": true,
+  "vim.leader": "<Space>",
+  "vim.replaceWithRegister": true,
+  "vim.sneak": true,
+  "vim.useSystemClipboard": true,
+  "vim.neovimPath": "/usr/bin/nvim",
+  "vim.enableNeovim": true,
+  // workbench
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.settings.editor": "json",
+  "workbench.statusBar.visible": true,
+  "workbench.commandPalette.preserveInput": true,
+  "workbench.editor.closeOnFileDelete": true,
+  // Prettier
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 80,
+  "prettier.jsxBracketSameLine": true,
+  "prettier.trailingComma": "all",
+  "prettier.useTabs": false,
+  "prettier.tabWidth": 2,
+  "prettier.jsxSingleQuote": true,
+  "prettier.semi": false,
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+  "prettier.endOfLine": "lf",
+  "prettier.bracketSpacing": true,
+  "prettier.arrowParens": "avoid",
+  "prettier.quoteProps": "as-needed",
+  // "prettier.singleQuote": true,
+  // "prettier.printWidth": 80,
+  // "prettier.jsxBracketSameLine": true,
+  // "prettier.trailingComma": "all",
+  // "prettier.useTabs": true,
+  // "prettier.tabWidth": 4,
+  // "prettier.jsxSingleQuote": true,
+  // "prettier.semi": true,
+  // "prettier.htmlWhitespaceSensitivity": "ignore",
+  // "prettier.endOfLine": "lf",
+  // "prettier.bracketSpacing": true,
+  // "prettier.arrowParens": "avoid",
+  // "prettier.quoteProps": "as-needed",
+  // Window
+  "explorer.confirmDelete": false,
+  "breadcrumbs.enabled": false,
+  "search.showLineNumbers": true,
+  "terminal.integrated.shell.linux": "/bin/bash",
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "window.menuBarVisibility": "default",
+  "window.restoreFullscreen": true,
+  "window.newWindowDimensions": "maximized",
+  "window.openWithoutArgumentsInNewWindow": "off",
+  // Files
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  // html
+  "html.format.endWithNewline": true,
+  "html.format.wrapAttributes": "force-aligned",
+  "html.format.extraLiners": "head, body, /html, main",
+  // git
+  "merge-conflict.autoNavigateNextConflict.enabled": true,
+  // Keybindings
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // change next/prev tab to next/prev buffer bind
+    {
+      "before": ["]", "b"],
+      "after": ["g", "t"]
+    },
+    {
+      "before": ["[", "b"],
+      "after": ["g", "T"]
+    },
+    // Remap Find to Easy Motion Find
+    {
+      "before": ["f"],
+      "after": ["<Leader>", "<Leader>", "f"]
+    },
+    {
+      "before": ["F"],
+      "after": ["<Leader>", "<Leader>", "F"]
+    },
+    // Show VSCODE Commands
+    {
+      "before": ["<Leader>", ";"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    // Tab Commands
+    {
+      "before": ["<Leader>", "q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["<Leader>", "Q"],
+      "commands": [""]
+    },
+    {
+      "before": ["<Leader>", "k"],
+      "commands": ["workbench.action.keepEditor"]
+    },
+    // Sidebar View Toggle Commands
+    {
+      "before": ["<Leader>", "n"],
+      "commands": ["workbench.explorer.fileView.focus"]
+    },
+    {
+      "before": ["<Leader>", "N"],
+      "commands": ["workbench.view.explorer"]
+    },
+    // Navigating Errors
+    {
+      "before": ["[", "e"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "e"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<Leader>", "]", "e"],
+      "commands": ["editor.action.marker.nextInFiles"]
+    },
+    // Shell Command at Current Location
+    {
+      "before": ["<Leader>", "c"],
+      "commands": ["shell.runCommandAtFileLocation"]
+    },
+    // Search / Grep Stuff
+    {
+      "before": ["<Leader>", "S"],
+      "commands": ["workbench.view.search"]
+    },
+    {
+      "before": ["<Leader>", "s", "s"],
+      "commands": ["search.action.openNewEditor"]
+    },
+    {
+      "before": ["<Leader>", "s", "v"],
+      "commands": ["search.action.openNewEditorToSide"]
+    },
+    {
+      "before": ["]", "s"],
+      "commands": ["search.action.focusNextSearchResult"]
+    },
+    {
+      "before": ["[", "s"],
+      "commands": ["search.action.focusPrevSearchResult"]
+    },
+    // File Manipulation
+    {
+      "before": ["<Leader>", "f", "c"], // create file
+      "commands": ["fileutils.newFile"]
+    },
+    {
+      "before": ["<Leader>", "f", "r"], // rename file
+      "commands": ["fileutils.renameFile"]
+    },
+
+    {
+      "before": ["<Leader>", "f", "d"], // delete file
+      "commands": ["fileutils.removeFile"]
+    },
+    // Git Stuff
+    {
+      "before": ["<Leader>", "G"],
+      "commands": ["workbench.view.scm"]
+    },
+    {
+      "before": ["<Leader>", "g", "c", "m"],
+      "commands": ["git.commitAll"]
+    },
+    {
+      "before": ["<Leader>", "g", "c", "o"],
+      "commands": ["git.checkout"]
+    },
+    {
+      "before": ["<Leader>", "g", "d"],
+      "commands": ["git.openChange"]
+    },
+    {
+      "before": ["]", "c"],
+      "commands": ["workbench.action.compareEditor.nextChange"]
+    },
+    {
+      "before": ["[", "c"],
+      "commands": ["workbench.action.compareEditor.previousChange"]
+    },
+    {
+      "before": ["<Leader>", "g", "s"],
+      "commands": ["git.stageSelectedRanges"]
+    },
+    {
+      "before": ["<Leader>", "g", "u"],
+      "commands": ["git.unstageSelectedRanges"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [";"],
+      "after": [":"]
+    }
+  ],
+  "files.eol": "\n",
+  "typescript.format.semicolons": "remove",
+  "javascript.format.semicolons": "remove",
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.minimap.enabled": false,
+  "markdown-preview-enhanced.breakOnSingleNewLine": true,
+  "diffEditor.renderSideBySide": false,
+  "vscode-neovim.useWSL": true,
+  "vscode-neovim.neovimInitPath": "/root/.config/nvim/init.vim",
+  "vscode-neovim.neovimPath": "/usr/bin/nvim",
+  "vscode-neovim.highlightGroups.unknownHighlight": {
+    "default": true
+  },
+  "workbench.activityBar.visible": true,
+  "workbench.sideBar.location": "left",
+  "git.enableSmartCommit": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "python.languageServer": "Pylance",
+  "prettier.proseWrap": "never",
+  "[markdown]": {
+    "editor.autoIndent": "advanced",
+    "editor.wordWrap": "off",
+    "editor.quickSuggestions": false
+  },
+  "terminal.integrated.inheritEnv": false
+}
