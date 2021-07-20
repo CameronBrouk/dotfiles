@@ -7,3 +7,7 @@ function glines {
 function findNodeModules {
   find . -name "node_modules" -type d -prune -print | xargs du -chs
 }
+
+function removeNodeModulesRecursive {
+  find . -name 'node_modules' -type d -prune -print -exec rm -rf '{}' \;
+}
