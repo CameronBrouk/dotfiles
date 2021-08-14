@@ -16,6 +16,7 @@ call minpac#add('neoclide/coc.nvim') " Bring VScode like plugin system to Vim(In
 call minpac#add('jiangmiao/auto-pairs') " Automatically create extra bracket/quote/paren paris
 call minpac#add('easymotion/vim-easymotion') " Easy Motion 
 call minpac#add('morhetz/gruvbox') " Theme
+call minpac#add('stsewd/fzf-checkout.vim') " git checkout stuff
 
 " SYNTAX
 call minpac#add('maxmellon/vim-jsx-pretty') " JS and TSX Syntax
