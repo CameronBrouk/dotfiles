@@ -11,3 +11,7 @@ function findNodeModules {
 function removeNodeModulesRecursive {
   find . -name 'node_modules' -type d -prune -print -exec rm -rf '{}' \;
 }
+
+function getServerIP {
+  hostname -I | awk '{print $1}'
+}
