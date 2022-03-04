@@ -15,3 +15,12 @@ function removeNodeModulesRecursive {
 function getServerIP {
   hostname -I | awk '{print $1}'
 }
+
+function updateNVM {
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+}
+
+
+checkRam() {
+  cat /proc/meminfo | grep Swap
+}

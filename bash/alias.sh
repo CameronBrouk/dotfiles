@@ -9,5 +9,5 @@ alias psqlstart="psql -U postgres"
 alias g="git"
 
 # Making sure I am always using nvim
-alias vi="nvim"
-alias vim="nvim"
+alias vi="vim"
+alias vim="vim"
